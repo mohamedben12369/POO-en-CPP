@@ -12,6 +12,6 @@ void processNumbers(const std::vector<int>& numbers) {
 int main() {
     std::vector<int> myNumbers = {1, 2, 3, 4, 5, 6}; // Liste d'arguments
     processNumbers(myNumbers); 
-    std::cout<<"hello";// Appel avec un seul argument de type vecteur
+    std::cout<<"hello worl i m ready";// Appel avec un seul argument de type vecteur
     return 0;
 }
