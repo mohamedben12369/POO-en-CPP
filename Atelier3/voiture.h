@@ -1,12 +1,12 @@
 #ifndef VOITURE_H
 #define VOITURE_H
-
+using namespace std ;
 #include <string>
 
 class Voiture {
 private:
-    std::string marque;
-    std::string modele;
+   string marque;
+   string modele;
     int annee;
     float kilometrage;
     float vitesse;
@@ -16,7 +16,7 @@ public:
     Voiture();
 
     // Constructeur avec paramètres
-    Voiture(std::string m, std::string mod, int a, float km, float v);
+    Voiture(std::string m,string mod, int a, float km, float v);
 
     // Méthode pour accélérer la voiture
     void accelerer(float valeur);
