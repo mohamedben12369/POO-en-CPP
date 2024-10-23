@@ -1,32 +1,23 @@
+#include "Voiture.h"
 #include <iostream>
-using namespace std;
-class voiture
-{   public:
-    string modele;
-    string marque;
-    int annedecreation;
-     
-    float kilometrage;
-    float vitesseactuelle;
-    voiture();
-   
-    };
-voiture::voiture(){
-//constructor par defaut si l'utilisateur a oublie les donnes de voiture par exemple
-   
-        
-        modele="aucun";
-        marque="aucun";
-        annedecreation=2010;
-        kilometrage=4500;
-        vitesseactuelle=60;
-   
-};
 
+int main() {
+    // Création d'une voiture avec le constructeur par défaut
+    Voiture voiture1;
+    voiture1.afficherInfo();
 
-int main()
-{
- voiture cetroin;
- cout<<cetroin.modele;
- return 0;
+    // Création d'une voiture avec le constructeur paramétré
+    Voiture voiture2("Toyota", "Corolla", 2015, 75000.0f, 100.0f);
+    voiture2.afficherInfo();
+
+    // Accélération et freinage de la voiture
+    voiture2.accelerer(20.0f);
+    voiture2.freiner(50.0f);
+    voiture2.afficherInfo();
+
+    // Faire avancer la voiture
+    voiture2.avancer(100.0f);
+    voiture2.afficherInfo();
+
+    return 0;
 }
