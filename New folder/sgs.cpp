@@ -14,8 +14,8 @@ private:
      
         }
          NombreComplexe(const NombreComplexe&autre):reel(autre.reel),imaginaire(autre.imaginaire){}
-         void afficher(){
-        void afficher() const {
+        
+        void afficher() {
         cout << reel << " ";
         if(img>=0){cout<<"+ "<<img<<"i"<<endl;}
         else {cout << "- " << -img << "i" << endl;}}};
